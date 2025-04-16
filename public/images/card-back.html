@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Back</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #0f3460 0%, #16213e 50%, #1a1a2e 100%);
+      color: white;
+      font-family: 'Arial', sans-serif;
+    }
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+      padding: 20px;
+    }
+    .highlight {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, #5f3dc4, #7048e8);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 10px rgba(112, 72, 232, 0.5);
+    }
+    .description {
+      font-size: 16px;
+      max-width: 80%;
+      margin-bottom: 30px;
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 1.5;
+    }
+    .hexagon {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 20px;
+      background: linear-gradient(45deg, #5f3dc4, #7048e8);
+      clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    }
+  </style>
+</head>
+<body>
+  <div class="card-content">
+    <div class="hexagon"></div>
+    <div class="highlight">WEB3 GAMING</div>
+    <div class="description">
+      Game7 is accelerating the adoption of blockchain-enabled game economies through grants, education, and open-source software.
+    </div>
+  </div>
+</body>
+</html>

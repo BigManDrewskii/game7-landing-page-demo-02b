@@ -1,0 +1,27 @@
+@keyframes bg-move {
+  0% {
+    background-position:
+      0px 0px, 6px 10.39230485px,
+      800% 400%,
+      1000% -400%,
+      -1200% -600%,
+      400% 41.5692194px;
+  }
+  100% {
+    background-position:
+      0px 0px, 6px 10.39230485px,
+      0% 0%,
+      0% 0%,
+      0% 0%,
+      0% 0%;
+  }
+}
+
+@keyframes bg-hue {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}

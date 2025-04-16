@@ -41,7 +41,7 @@ export default function Index() {
       </div>
       <section className="flex flex-col items-center gap-4 sm:gap-5 max-w-3xl w-full space-y-2 md:space-y-3 relative z-20">
         <header className="flex items-center justify-center animate-fade-in opacity-0 hover:scale-105 transition-transform duration-300" style={{ animationDelay: "200ms", animationFillMode: "forwards" }}>
-          <Logo />
+          <Logo linkToPortal={true} />
         </header>
 
         <h1 className="font-unbounded text-5xl sm:text-6xl md:text-7xl lg:text-[80px] font-medium leading-tight sm:leading-tight md:leading-tight lg:leading-[1.15] text-center text-white tracking-[-0.02em] animate-fade-in opacity-0 hover:text-white/90 transition-colors duration-300 text-shadow-lg" style={{ animationDelay: "400ms", animationFillMode: "forwards" }}>

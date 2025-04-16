@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Front</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      color: white;
+      font-family: 'Arial', sans-serif;
+    }
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+      padding: 20px;
+    }
+    .logo {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, #00f5a0, #00d9f5);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 10px rgba(0, 245, 160, 0.5);
+    }
+    .subtitle {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .polygon {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 20px;
+      background: linear-gradient(45deg, #00f5a0, #00d9f5);
+      clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    }
+    .prompt {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.6);
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card-content">
+    <div class="polygon"></div>
+    <div class="logo">GAME7</div>
+    <div class="subtitle">INTERACTIVE</div>
+    <div class="prompt">FLIP CARD</div>
+  </div>
+</body>
+</html>

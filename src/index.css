@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Import custom styles */
+@import "./styles/cyber-card.css";
+@import "./styles/flip-card.css";
+@import "./styles/portal-bg.css";
+@import "./styles/portal-animations-inline.css";
+@import "./styles/portal-pattern-new.css";
+@import "./styles/dot-grid-pattern.css";
+@import "./styles/simple-pattern.css";
+
 @layer base {
   :root {
     --background: 0 0% 100%;
