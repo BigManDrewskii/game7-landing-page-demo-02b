@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Logo } from "@/components/ui/logo";
 import { Footer } from "@/components/ui/footer";
 import { NotificationForm } from "@/components/notification-form";
+import { Link } from "react-router-dom";
 
 export default function Index() {
   const [videoLoaded, setVideoLoaded] = useState(false);
@@ -53,6 +54,15 @@ export default function Index() {
 
         <div className="w-full animate-fade-in opacity-0 group" style={{ animationDelay: "800ms", animationFillMode: "forwards" }}>
           <NotificationForm />
+        </div>
+
+        <div className="animate-fade-in opacity-0" style={{ animationDelay: "1000ms", animationFillMode: "forwards" }}>
+          <Link 
+            to="/showcase" 
+            className="inline-block mt-6 text-sm text-zinc-400 hover:text-white underline underline-offset-4 transition-colors duration-300"
+          >
+            View our showcase page
+          </Link>
         </div>
       </section>
       
