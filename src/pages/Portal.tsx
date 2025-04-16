@@ -9,6 +9,14 @@ import AnimatedPattern from "@/components/ui/animated-pattern";
 // Note: In a Vite project, we'll load fonts via CSS instead of Next.js font loading
 
 const PortalPage = () => {
+  // Set the document title for the Portal page
+  React.useEffect(() => {
+    document.title = "Game7 - Portal";
+    return () => {
+      document.title = "Game7"; // Reset to default title when unmounting
+    };
+  }, []);
+  
   return (
     <>
       {/* Background Pattern - Positioned outside the main container */}
@@ -28,9 +36,11 @@ const PortalPage = () => {
           {/* Page title */}
           {/* Header/Navigation */}
           <header id="main-header" className="w-full inline-flex justify-between items-center" data-section="header">
-            {/* Logo */}
+            {/* Logo - Link to home page */}
             <div className="flex justify-start items-start">
-              <Logo />
+              <Link to="/">
+                <Logo />
+              </Link>
             </div>
             
             {/* Navigation Links */}
