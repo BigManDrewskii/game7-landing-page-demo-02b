@@ -71,6 +71,11 @@ export default {
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
+			textShadow: {
+				sm: '0 1px 2px rgba(0, 0, 0, 0.25)',
+				DEFAULT: '0 2px 4px rgba(0, 0, 0, 0.5)',
+				lg: '0 3px 6px rgba(0, 0, 0, 0.75), 0 0 5px rgba(255, 255, 255, 0.1)',
+			},
 			keyframes: {
 				'accordion-down': {
 					from: {
@@ -112,6 +117,11 @@ export default {
 					'0%, 100%': { transform: 'translateX(0)' },
 					'10%, 30%, 50%, 70%, 90%': { transform: 'translateX(-2px)' },
 					'20%, 40%, 60%, 80%': { transform: 'translateX(2px)' },
+				},
+				rainbow: {
+					'0%': { backgroundPosition: '0% 50%' },
+					'50%': { backgroundPosition: '100% 50%' },
+					'100%': { backgroundPosition: '0% 50%' }
 				}
 			},
 			animation: {
@@ -119,9 +129,13 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.7s ease-out forwards',
 				'scale-in': 'scale-in 0.5s ease-out',
-				'shake': 'shake 0.5s ease-in-out',
+				'shake': 'shake 0.5s ease-out',
+				'rainbow': 'rainbow 3s ease infinite'
 			}
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [
+		require("tailwindcss-animate"),
+		require("./src/lib/text-shadow")
+	],
 } satisfies Config;

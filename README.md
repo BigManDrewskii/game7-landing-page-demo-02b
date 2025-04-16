@@ -1,22 +1,20 @@
-# Welcome to your Lovable project
+# Welcome to the Game7 Landing Page
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/ce101f98-05af-4bbe-b0ad-2139ebb3ad43
+**URL**: https://game7.io
 
 ## How can I edit this code?
 
 There are several ways of editing your application.
 
-**Use Lovable**
+**About Game7**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ce101f98-05af-4bbe-b0ad-2139ebb3ad43) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
+Game7 is a blockchain gaming DAO committed to accelerating the adoption of blockchain-enabled game economies. Visit the [Game7 Website](https://game7.io) to learn more.
 
 **Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+If you want to work locally using your own IDE, you can clone this repo and push changes.
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
@@ -62,12 +60,8 @@ This project is built with .
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/ce101f98-05af-4bbe-b0ad-2139ebb3ad43) and click on Share -> Publish.
+Use standard deployment processes for your preferred hosting platform.
 
-## Can I connect a custom domain to my Lovable project?
+## Game7 Portal
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Visit the [Game7 Portal](https://app.game7.io/) to explore the full ecosystem.
