@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 
 export function NotificationForm() {
@@ -45,29 +46,29 @@ export function NotificationForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col items-center w-full">
-      <div className="flex items-center gap-5 w-full flex-wrap justify-center">
+    <form onSubmit={handleSubmit} className="flex flex-col items-center w-full mt-4">
+      <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-5 w-full justify-center">
         <input
           type="email"
           placeholder="name@email.com"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-[465px] h-[68px] border border-zinc-500 bg-[#0D0D0D] shadow-[0_0_0_1px_#262626_inset] text-[#CCC] text-base opacity-65 p-5 rounded-[50px] border-solid max-md:w-[400px] max-sm:w-[300px] focus:outline-none focus:ring-2 focus:ring-white/20"
+          className="w-full sm:w-[350px] md:w-[400px] lg:w-[465px] h-14 sm:h-16 md:h-[68px] border border-zinc-700 bg-[#0D0D0D] shadow-[0_0_0_1px_#262626_inset] text-zinc-200 text-base p-5 rounded-full border-solid transition-all focus:outline-none focus:ring-2 focus:ring-white/20 focus:border-zinc-500"
           aria-label="Email address"
         />
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-[164px] h-[68px] bg-white shadow-[0_0_35px_rgba(255,255,255,0.20)] text-lg font-bold text-[#0D0D0D] capitalize px-[29px] py-3.5 rounded-[40px] max-md:w-[150px] max-sm:w-[120px] hover:bg-gray-100 transition-colors disabled:opacity-70"
+          className="w-full sm:w-auto md:w-[164px] h-14 sm:h-16 md:h-[68px] bg-white shadow-[0_0_25px_rgba(255,255,255,0.15)] text-base sm:text-lg font-semibold text-[#0D0D0D] px-8 py-3.5 rounded-full hover:bg-gray-100 transition-all disabled:opacity-70 mt-2 sm:mt-0"
         >
           {isSubmitting ? "Submitting..." : "Get notified"}
         </button>
       </div>
 
-      {error && <p className="mt-2 text-red-500 text-sm">{error}</p>}
+      {error && <p className="mt-3 text-red-400 text-sm font-unbounded">{error}</p>}
 
       {success && (
-        <p className="mt-2 text-green-500 text-sm">
+        <p className="mt-3 text-emerald-400 text-sm font-unbounded">
           Thank you! You'll be notified of updates.
         </p>
       )}
