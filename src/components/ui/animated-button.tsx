@@ -14,7 +14,7 @@ export const AnimatedButton = React.forwardRef<HTMLButtonElement, AnimatedButton
         ref={ref}
         className={cn(
           "uiverse relative cursor-pointer border-none rounded-[24px] p-0 m-0 text-center font-semibold text-base tracking-[0.02em] leading-[1.5] text-white",
-          "bg-gradient-to-r from-amber-400 to-amber-300 shadow-[0_0_14px_rgba(255,223,87,0.5)] hover:shadow-[0_0_20px_rgba(255,223,87,0.8)] transition-shadow",
+          "bg-gradient-to-r from-gray-600 to-gray-500 shadow-[0_0_14px_rgba(128,128,128,0.5)] hover:shadow-[0_0_20px_rgba(128,128,128,0.8)] transition-shadow",
           isSubmitting ? "opacity-70 pointer-events-none" : "",
           className
         )}

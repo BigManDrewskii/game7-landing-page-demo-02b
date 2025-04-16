@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -105,16 +104,16 @@
 .uiverse {
   --duration: 7s;
   --easing: linear;
-  --c-color-1: rgba(255, 163, 26, 0.7);
-  --c-color-2: #1a23ff;
-  --c-color-3: #e21bda;
-  --c-color-4: rgba(255, 232, 26, 0.7);
-  --c-shadow: rgba(255, 223, 87, 0.5);
-  --c-shadow-inset-top: rgba(255, 223, 52, 0.9);
-  --c-shadow-inset-bottom: rgba(255, 250, 215, 0.8);
-  --c-radial-inner: #ffd215;
-  --c-radial-outer: #fff172;
-  --c-color: #fff;
+  --c-color-1: rgba(128, 128, 128, 0.7);
+  --c-color-2: #6B7280;
+  --c-color-3: #4B5563;
+  --c-color-4: rgba(105, 105, 105, 0.7);
+  --c-shadow: rgba(100, 100, 100, 0.5);
+  --c-shadow-inset-top: rgba(110, 110, 110, 0.9);
+  --c-shadow-inset-bottom: rgba(120, 120, 120, 0.8);
+  --c-radial-inner: #8A898C;
+  --c-radial-outer: #403E43;
+  --c-color: #F1F0FB;
 }
 
 .uiverse:before {
